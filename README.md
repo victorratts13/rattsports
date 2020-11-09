@@ -23,3 +23,74 @@ $content = file_get_contents("https://api.rattsports.online/v1?call=getall");
 $jsonData = json_decode($getObj);
 var_dump($jsonData);
 ```
+
+## getting time status
+
+for get time status from all games in live, you can use https://api.rattsports.online/v1?call=getGame&method=gameStatus. 
+
+- js
+```js
+const $.get('https://api.rattsports.online/v1', {"call": "getGame", "method": "gameStatus"}).then((rest) => {
+    console.log(rest)
+})
+```
+
+- php
+```php
+$content = file_get_contents("https://api.rattsports.online/v1?call=getGame&method=gameStatus");
+$jsonData = json_decode($getObj);
+var_dump($jsonData);
+```
+
+## getting resumed information 
+for get a little information of all games you can use https://api.rattsports.online/v1?call=getGame&method=gameInfo.
+
+- js
+```js
+const $.get('https://api.rattsports.online/v1', {"call": "getGame", "method": "gameInfo"}).then((rest) => {
+    console.log(rest)
+})
+```
+
+- php
+```php
+$content = file_get_contents("https://api.rattsports.online/v1?call=getGame&method=gameInfo");
+$jsonData = json_decode($getObj);
+var_dump($jsonData);
+```
+
+## getting complete information
+
+for get all information of games, you can use https://api.rattsports.online/v1?call=getGame&method=completeInfo
+
+- js
+```js
+const $.get('https://api.rattsports.online/v1', {"call": "getGame", "method": "completeInfo"}).then((rest) => {
+    console.log(rest)
+})
+```
+
+- php
+```php
+$content = file_get_contents("https://api.rattsports.online/v1?call=getGame&method=completeInfo");
+$jsonData = json_decode($getObj);
+var_dump($jsonData);
+```
+
+## getting event information
+
+for get all event from games, you can use https://api.rattsports.online/v1?call=getGame&method=events
+
+- js
+```js
+const $.get('https://api.rattsports.online/v1', {"call": "getGame", "method": "events"}).then((rest) => {
+    console.log(rest)
+})
+```
+
+- php
+```php
+$content = file_get_contents("https://api.rattsports.online/v1?call=getGame&method=events");
+$jsonData = json_decode($getObj);
+var_dump($jsonData);
+```
