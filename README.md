@@ -94,3 +94,9 @@ $content = file_get_contents("https://api.rattsports.online/v1?call=getGame&meth
 $jsonData = json_decode($getObj);
 var_dump($jsonData);
 ```
+
+## complementation
+
+all data returns a json in apiRest with solicited information, if you like more details, you can send email for suporte@rattsports.online or can contact me on telegram: @victorRatts
+
+
