@@ -8,11 +8,11 @@ You can access https://rattsports.online for see live games implementation and c
 
 ## getting games
 
-for get all games without previous filter, access https://api.rattsports.online/v1?call=getall
+for get all games without previous filter, access https://rattsports.online/api?call=getall
 
 - js
 ```js
-const $.get('https://api.rattsports.online/v1', {"call": "getall"}).then((rest) => {
+const $.get('https://rattsports.online/api', {"call": "getall"}).then((rest) => {
     console.log(rest)
 })
 ```
